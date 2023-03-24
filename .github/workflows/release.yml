@@ -20,7 +20,7 @@ jobs:
           version: 7
 
       - name: Use Node.js 16
-        uses: pnpm/setup-node@v1
+        uses: action/setup-node@v1
         with:
           node-version: 16.x
 
