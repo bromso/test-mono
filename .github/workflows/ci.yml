@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: pnpm/checkout@v2
 
       - name: Use Node.js 16
-        uses: actions/setup-node@v1
+        uses: pnpm/setup-node@v1
         with:
           node-version: 16.x
 
