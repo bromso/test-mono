@@ -1,4 +1,4 @@
-name: Release
+name: Version or Publish
 
 on:
   push:
@@ -20,16 +20,16 @@ jobs:
           node-version: 16.x
 
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
+        run: pnpm --frozen-lockfile
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: ./
         with:
-          version: yarn bump
-          publish: yarn release
+          version: pnpm bump
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
