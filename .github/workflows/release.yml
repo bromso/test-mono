@@ -34,7 +34,7 @@ jobs:
         id: changesets
         uses: ./
         with:
-          version: pnpm bump
+          version: pnpm publish -r
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
