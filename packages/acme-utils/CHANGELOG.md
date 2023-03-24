@@ -1,5 +1,11 @@
 # @acme/utils
 
+## 2.0.0
+
+### Major Changes
+
+- dd4f5a3: Doing stuff
+
 ## 1.0.0
 
 ### Major Changes
