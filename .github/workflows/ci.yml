@@ -18,7 +18,7 @@ jobs:
           node-version: 16.x
 
       - name: Install Dependencies
-        run: pnpm --frozen-lockfile
+        run: pnpm i
 
       - name: Test
         run: pnpm test
